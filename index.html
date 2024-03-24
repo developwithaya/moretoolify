@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <script src="./script.js" defer></script>
+</head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">moretoolify</div>
+
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="tools-section">
+                <div class="tool" style="flex-grow: 1;">
+                    <h2>URL Shortener</h2>
+                    <p>Description of URL Shortener</p>
+                </div>
+                <div class="tool">
+                    <h2>QR Code Generator</h2>
+                    <p>Description of QR Code Generator</p>
+                </div>
+                <div class="tool">
+                    <h2>Link Bundler</h2>
+                    <p>Description of Link Bundler</p>
+                </div>
+            </section>
+    
+            <section class="faq-section">
+                <h2>FAQ</h2>
+                <div class="faq-question" onclick="toggleAnswer(1)">Question 1: What is Lorem Ipsum?</div>
+                <div class="faq-answer">Answer 1: Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                <div class="faq-question" onclick="toggleAnswer(2)">Question 2: Why do we use it?</div>
+                <div class="faq-answer">Answer 2: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+                <div class="faq-question" onclick="toggleAnswer(3)">Question 3: Where does it come from?</div>
+                <div class="faq-answer">Answer 3: Contrary to popular belief, Lorem Ipsum is not simply random text.</div>
+                <div class="faq-question" onclick="toggleAnswer(4)">Question 4: Where can I get some?</div>
+                <div class="faq-answer">Answer 4: There are many variations of passages of Lorem Ipsum available.</div>
+                <div class="faq-question" onclick="toggleAnswer(5)">Question 5: What is the purpose of Lorem Ipsum?</div>
+                <div class="faq-answer">Answer 5: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>
+            </section>
+        </main>
+
+        <footer>
+            <h3>Sitemap</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <h3>Sign Up for Updates</h3>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Sign Up</button>
+            </form>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
