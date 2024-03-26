@@ -140,7 +140,7 @@ header {
   height: 100vh;
 }
 header section.hero {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,17 +162,30 @@ header section.hero .benefits ul {
 }
 header section.hero .benefits ul li {
   margin-right: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 header section.hero .call-to-action {
   border: 1px solid #051014;
   margin-bottom: 1rem;
 }
 
+main .container {
+  position: relative;
+}
+main .container .section-devider2 {
+  transform: rotate(180deg);
+  position: relative;
+  width: 100%;
+  top: -20px;
+}
 main section.tools-section {
+  position: relative;
+  width: 100%;
+  top: -10px;
   background: #051014;
   color: #f3f3f3;
-  border-radius: 20px;
-  margin: 64px;
   display: flex;
   align-items: center;
 }
@@ -185,11 +198,8 @@ main section.tools-section p {
 main section.tools-section .tools {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
   display: flex;
   justify-content: center;
-  border: 1px solid red;
-  border-radius: 10px;
 }
 
 .tools-section {
