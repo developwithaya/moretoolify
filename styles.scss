@@ -141,6 +141,11 @@ li {
     border-radius: $borderRadius;
 }
 
+.call-to-action {
+    border: 1px solid $blue;
+    margin-bottom: 1rem;
+}
+
 button {
     cursor: pointer;
 }
@@ -188,11 +193,6 @@ header {
                 gap: 5px;
             }
         }
-
-        .call-to-action {
-            border: 1px solid $blue;
-            margin-bottom: 1rem;
-        }
     }
 }
 
@@ -203,34 +203,93 @@ main {
         .section-devider2 {
             transform: rotate(180deg);
             position: relative;
-        width: 100%;
-        top: -20px;
+            width: 100%;
+            top: -75px;
         }
     }
 
     section.tools-section {
         position: relative;
         width: 100%;
-        top: -10px;
+        height: 110vh;
+        top: -70px;
         background: #051014;
         color: $white;
+        padding-inline: 0;
 
         display: flex;
         align-items: center; 
 
         h2 {
             padding-bottom: 1rem;
+            font-size: 2rem;
         }
 
         p {
-            padding-bottom: 1.5rem;
+            padding-bottom: 2.5rem;
         }
 
         .tools {
             width: 100%;
             padding: 10px;
-            display: flex;
-            justify-content: center;
+            gap: 2rem;
+
+            .tool-type {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+
+                button.tool {
+                    background-color: $white;
+                    border: none;
+                    border-bottom: 1px solid $blue;
+                    // border-radius: 15px 15px 0px 0px;
+                    font-size: 1.2rem;
+                    padding: 1rem 1.5rem;
+                    color: $black;
+                }
+            }
+            
+            label {
+                color: $black;
+            }
+
+            .tool-display {
+                background: $white;
+                width: 80vw;
+                margin-inline: auto;
+                text-align: left;
+                display: flex;
+                align-items: left;
+                justify-content: left;
+                padding: 2rem;
+
+                form {
+                    width: 100%;
+
+                    .field {
+                        display: flex;
+                        flex-direction: column;
+                        
+
+                        label {
+                            padding-bottom: 1vh;
+                        }
+
+                        .input-field {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between ;
+
+                            input {
+                                padding: 0.9rem 1.5rem;
+                                font-size: 1rem;
+                                width: 60vw;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

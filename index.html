@@ -53,16 +53,41 @@
     
                     <section class="tools">
                         <div class="tool">
-                            <h2>URL Shortener</h2>
-                            <p>Description of URL Shortener</p>
-                        </div>
-                        <div class="tool">
-                            <h2>QR Code Generator</h2>
-                            <p>Description of QR Code Generator</p>
-                        </div>
-                        <div class="tool">
-                            <h2>Link Bundler</h2>
-                            <p>Description of Link Bundler</p>
+                            <div class="tool-type">
+                                <button class="tool">URL Shortener</button>
+                                <button class="tool">QR Code Generator</button>
+                                <button class="tool">Link Bundler</button>
+                            </div>
+                            <section class="tool-display">
+                                <form action="" class="url-input">
+                                    <div class="field">
+                                        <label for="url">Paste your long url here</label>
+                                        <div class="input-field">
+                                            <div class="">
+                                                <input type="text" name="url" id="url" placeholder="https://www.example.net/afterthought/apparatus.htm?baseball=blade">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="field field2">
+                                        <div class="input-field">
+                                            <label for="url">Choose domain</label>
+                                            <div class="">
+                                                <input type="text" name="url" id="url" placeholder="https://www.example.net/afterthought/apparatus.htm?baseball=blade">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="input-field">
+                                            <label for="url">Custom URL path</label>
+                                            <div class="">
+                                                <input type="text" name="url" id="url" placeholder="https://www.example.net/afterthought/apparatus.htm?baseball=blade">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="button call-to-action">Shorten URL</button>
+                                </form>
+                            </section>
                         </div>
                     </section>
                 </section>

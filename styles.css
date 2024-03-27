@@ -123,6 +123,11 @@ li {
   border-radius: 4px;
 }
 
+.call-to-action {
+  border: 1px solid #051014;
+  margin-bottom: 1rem;
+}
+
 button {
   cursor: pointer;
 }
@@ -166,10 +171,6 @@ header section.hero .benefits ul li {
   justify-content: center;
   gap: 5px;
 }
-header section.hero .call-to-action {
-  border: 1px solid #051014;
-  margin-bottom: 1rem;
-}
 
 main .container {
   position: relative;
@@ -178,28 +179,76 @@ main .container .section-devider2 {
   transform: rotate(180deg);
   position: relative;
   width: 100%;
-  top: -20px;
+  top: -75px;
 }
 main section.tools-section {
   position: relative;
   width: 100%;
-  top: -10px;
+  height: 110vh;
+  top: -70px;
   background: #051014;
   color: #f3f3f3;
+  padding-inline: 0;
   display: flex;
   align-items: center;
 }
 main section.tools-section h2 {
   padding-bottom: 1rem;
+  font-size: 2rem;
 }
 main section.tools-section p {
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
 }
 main section.tools-section .tools {
   width: 100%;
   padding: 10px;
+  gap: 2rem;
+}
+main section.tools-section .tools .tool-type {
   display: flex;
   justify-content: center;
+  gap: 10px;
+}
+main section.tools-section .tools .tool-type button.tool {
+  background-color: #f3f3f3;
+  border: none;
+  border-bottom: 1px solid #051014;
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  color: #0D0A0B;
+}
+main section.tools-section .tools label {
+  color: #0D0A0B;
+}
+main section.tools-section .tools .tool-display {
+  background: #f3f3f3;
+  width: 80vw;
+  margin-inline: auto;
+  text-align: left;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  padding: 2rem;
+}
+main section.tools-section .tools .tool-display form {
+  width: 100%;
+}
+main section.tools-section .tools .tool-display form .field {
+  display: flex;
+  flex-direction: column;
+}
+main section.tools-section .tools .tool-display form .field label {
+  padding-bottom: 1vh;
+}
+main section.tools-section .tools .tool-display form .field .input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main section.tools-section .tools .tool-display form .field .input-field input {
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+  width: 60vw;
 }
 
 .tools-section {
